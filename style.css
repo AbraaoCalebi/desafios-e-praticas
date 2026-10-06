@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+   background-color: rgb(255, 255, 255);
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: rgba(47, 0, 255, 0.582);
+}
+
+#prin {
+   background-color: white;
+   border: 3px solid;
+   border-radius: 5px;
+   width: 90%;
+   height: 90%;
+}
+
+h1 {
+   padding-bottom: 20px;
+}
+
+input {
+   margin: 30px;
+   height: 50px;
+   width: 300px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+label {
+   margin-right: 5px;
+}
+
+input#label {
+   margin-left: 0px;
+}
+
+#resultado {
+   display: none; /* Começa escondida */
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; 
+  
+  /* Tamanho da janela */
+  width: 300px;
+  height: 150px;
+  
+  /* Centraliza o texto perfeitamente dentro dela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Visual do card */
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+  height: 100px;
+  width: 500px;
+}
+
+#resultado > p {
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.escondido {
+  display: none !important;
+}

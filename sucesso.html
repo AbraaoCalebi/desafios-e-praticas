@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boas-vindas!</h1>
+    <p id="mensagem"></p>
+
+    <script>
+        // Captura os parâmetros da URL
+        var params = new URLSearchParams(window.location.search);
+        var nome = params.get('nome');
+        var idade = params.get('idade');
+
+        // Exibe os dados na tela se eles existirem
+        if (nome && idade) {
+            document.getElementById('mensagem').innerHTML = 
+                `Olá, <strong>${nome}</strong>! Seu cadastro foi concluído com <strong>${idade}</strong> anos.`;
+        }
+    </script>
+</body>
+</html>
